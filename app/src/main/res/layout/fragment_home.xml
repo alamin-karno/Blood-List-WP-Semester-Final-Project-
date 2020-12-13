@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".HomeFragment">
+
+    <EditText
+        android:id="@+id/nameET"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/ageET"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your age"
+        android:inputType="number"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Sex:"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <RadioButton
+            android:id="@+id/maleBTN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:text="Male"/>
+
+        <RadioButton
+            android:id="@+id/femaleBTN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:text="Female"/>
+
+        <RadioButton
+            android:id="@+id/otherBTN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:text="Other"/>
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/cityET"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your city"
+        android:inputType="text"/>
+
+
+    <Spinner
+        android:id="@+id/bloodGroupSP"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/bloodGroup"/>
+
+
+    <Button
+        android:id="@+id/insertBTN"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insert Data"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
